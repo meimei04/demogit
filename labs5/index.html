@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="pro" data-price="1950">iphone 9</label>
+    <input id="qty" type="number">
+    <button onclick="display()" >Ok</button><hr>
+    <h3>name: <span id="name"></span></h3>
+    <h3>amount: <span id="amount"></span></h3>
+</body>
+<script>
+    function display(){
+        let pro = document.getElementById("pro")
+    let name = pro.innerText
+    let price = pro.getAttribute("data-price")
+    let quantity= qty.value
+    let amount = price * quantity
+    document.getElementById("name").innerText = name
+    document.getElementById("amount").innerText = amount
+    }
+</script>
+</html>
